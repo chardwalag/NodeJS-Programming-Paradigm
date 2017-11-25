@@ -1,3 +1,3 @@
 # NodeJS-Programming-Paradigm
 
-This is a compilation of working prototypes as NodeJS programming patterns.
+This is a compilation of working prototypes as the NodeJS programming patterns.
