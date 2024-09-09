@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>WebRTC Video Call Test App</title>
+    <link rel='stylesheet' href='./css/style.css'>
+  </head>
+  <body>
+    <div class='main-container'>
+      <div>
+        <p id='user'></p>
+        <div class='users-container'>
+          <p id='online-user-count'></p>
+          <div id='online-users'></div> 
+        </div>
+      </div>
+      <div class='video-container'>
+        <video muted autoplay id='remote-video'></video>
+        <div class='local-video-container'>
+          <video id='local-video' muted autoplay></video>
+        </div> 
+      </div>
+    </div>
+    <div id='dialog'></div>    
+    <script src='/socket.io/socket.io.js'>
+    </script>
+    <script src='./js/index.js' type='module'></script>
+  </body>
+</html>
