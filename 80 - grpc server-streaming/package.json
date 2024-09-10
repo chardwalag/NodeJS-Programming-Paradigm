@@ -1,5 +1,5 @@
 {
-  "name": "80---grpc",
+  "name": "80---grpc-server-streaming",
   "version": "1.0.0",
   "description": "A sample gRPC server streaming app",
   "type": "commonjs",
