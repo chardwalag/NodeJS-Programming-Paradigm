@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package sum;
+
+message SumRequest {
+  int64 num = 1;
+}
+
+message SumResponse {
+  int64 result = 1;
+}
+
+service Sum {
+  rpc Sum( stream SumRequest ) returns ( SumResponse );
+}

@@ -1,0 +1,21 @@
+{
+  "name": "81---grpc-client-streaming",
+  "version": "1.0.0",
+  "description": "A sample gRPC client streaming app",
+  "type": "commonjs",
+  "scripts": {
+    "pb:gen": "./scripts/gen.sh sum",
+    "pb:win:gen": "powershell -ExecutionPolicy unrestricted ./scripts/gen.ps1 sum",
+    "sum:server": "node sum/server",
+    "sum:client": "node sum/client"
+  },
+  "author": "Richard Walag",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.8",
+    "google-protobuf": "^3.21.2"
+  },
+  "devDependencies": {
+    "grpc-tools": "1.11.3"
+  }
+}
