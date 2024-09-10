@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package fibo;
+
+message FiboRequest {
+  int32 num = 1;
+}
+
+message FiboResponse {
+  string result = 1;
+}
+
+service Fibo {
+  rpc Fibo( FiboRequest ) returns ( stream FiboResponse );
+}
