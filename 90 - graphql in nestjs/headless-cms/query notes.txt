@@ -1,0 +1,48 @@
+1. create an item:
+
+mutation {
+    createItem(
+        title: "solid",
+        category: "matter"
+    ) {
+        Id
+        title
+        category
+    }
+}
+
+2. fetch all items:
+
+query {
+    items {
+        Id
+        category,
+        title
+    }
+}
+
+3. fetch an item:
+
+query {
+    item ( Id: 1 ) {
+        Id,
+        category,
+        title
+    }
+}
+
+4. updating an item
+
+mutation {
+    updateItem( Id: 9, data: { title: "gas", category: "matter" }) {
+        Id
+        title
+        category
+    }
+}
+
+5. removing an item:
+
+mutation {
+    removeItem( Id: 1 )
+}
