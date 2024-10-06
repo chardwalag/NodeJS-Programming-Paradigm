@@ -1,11 +1,11 @@
 const { google } = require( 'googleapis' ),
-sheets = google.sheets( 'v4' ),
 fs = require( 'fs' ),
 
 
 // Load client secrets from a local file.
 credentials = JSON.parse( fs.readFileSync( 'path/to/credentials.json' )),
 
+sheets = google.sheets( 'v4' ),
 scopes = [ 'https://www.googleapis.com/auth/spreadsheets' ],
 spreadsheetId = 'SPREADSHEET_ID',
 
