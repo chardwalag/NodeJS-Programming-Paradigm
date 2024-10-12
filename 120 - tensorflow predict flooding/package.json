@@ -1,0 +1,15 @@
+{
+  "name": "tensorflow",
+  "version": "1.0.0",
+  "description": "Flood prediction using tensorflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Richard Walag",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^4.21.0"
+  }
+}
