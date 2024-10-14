@@ -11,3 +11,4 @@ featuring the following technologies:
   - Google Cloud (Sheet, Functions/Run, PubSub, FireStore, Storage, Workflows, BigQuery)
   - Social Login with Facebook and Google
   - Tensorflow
+  - Auth0 (SSO)
