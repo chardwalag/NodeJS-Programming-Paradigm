@@ -2,13 +2,13 @@
 
 This is a compilation of working prototypes representing the NodeJS programming patterns;
 featuring the following technologies:
+  - Auth0 (SSO)
   - ExpressJS
-  - MongoDB (also other NoSQL such as NEDB, CouchDB, Redis)
-  - MySQL
-  - WebSocket, Socket.IO (WebRTC)
   - gRPC
   - GraphQL
   - Google Cloud (Sheet, Functions/Run, PubSub, FireStore, Storage, Workflows, BigQuery)
+  - MongoDB (also other NoSQL such as NEDB, CouchDB, Redis)
+  - MySQL
   - Social Login with Facebook and Google
   - Tensorflow
-  - Auth0 (SSO)
+  - WebSocket, Socket.IO (WebRTC)
