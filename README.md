@@ -5,7 +5,7 @@ featuring the following technologies:
   - ExpressJS
   - MongoDB (also other NoSQL such as NEDB, CouchDB, Redis)
   - MySQL
-  - Socket.IO (WebRTC)
+  - WebSocket, Socket.IO (WebRTC)
   - gRPC
   - GraphQL
   - Google Cloud (Sheet, Functions/Run, PubSub, FireStore, Storage, Workflows, BigQuery)
