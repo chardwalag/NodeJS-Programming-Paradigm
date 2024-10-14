@@ -7,8 +7,8 @@ featuring the following technologies:
   - Google Cloud (Ads, BigQuery, FireStore, Functions/Run, PubSub, Sheet, Storage, Workflows)
   - GraphQL
   - gRPC
-  - MongoDB (also other NoSQL such as NEDB, CouchDB, Redis)
   - MySQL
+  - NoSQL (CouchDB, MongoDB, NEDB, Redis)
   - NestJS
   - Social Login with Facebook and Google
   - SSR and SEO friendliness
