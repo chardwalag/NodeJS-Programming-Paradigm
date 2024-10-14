@@ -1,0 +1,37 @@
+main:
+  steps:
+    - getWeather:
+        call: http.get
+        args:
+          url: "https://api.openweathermap.org/data/2.5/weather?q=Manila&appid=WHEATHER_APIKEY"
+        result: weatherResponse  # Store the result in a variable
+
+    - checkResponse:
+        switch:
+          - condition: ${weatherResponse.body}  # Check if body exists
+            next: checkStatus
+          - condition: ${weatherResponse.statusCode != 200}
+            next: handleError  # If body does not exist, go to handleError
+
+    - checkStatus:
+        switch:
+          - condition: ${weatherResponse.body.cod == 200}  # Check for successful status code
+            next: storeInFirestore
+          - condition: ${weatherResponse.body.cod != 200}  # Handle error case
+            next: handleError
+
+    - storeInFirestore:
+        call: googleapis.firestore.v1.projects.databases.documents.createDocument
+        args:
+          parent: "projects/PROJECT_ID/databases/(default)/documents"  # Specify your Firestore database path
+          collectionId: "weatherData"  # Specify your Firestore collection name
+          documentId: "weather_manila"  # Specify a unique document ID or leave it empty for auto-generation
+          body:
+            fields:
+              temperature: 
+                doubleValue: '${weatherResponse.body.main.temp}'  # Wrap in single quotes
+              description: 
+                stringValue: '${weatherResponse.body.weather[0].description}'  # Wrap in single quotes
+
+    - handleError:
+        return: "Failed to retrieve weather data or unexpected response format."
