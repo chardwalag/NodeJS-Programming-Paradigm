@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Ads Management</title>
+  </head>
+  <body>
+    <h1>Google Ads Management</h1>
+    
+    <h2>Create Ad</h2>
+    <form id="adForm">
+      <input type="text" id="adGroupId" placeholder="Ad Group ID" required />
+      <input type="text" id="headline1" placeholder="Headline 1" required />
+      <input type="text" id="headline2" placeholder="Headline 2" required />
+      <input type="text" id="description1" placeholder="Description 1" required />
+      <input type="text" id="description2" placeholder="Description 2" required />
+      <button type="submit">Create Ad</button>
+    </form>
+
+    <h2>Existing Ads</h2>
+    <ul id="adList">
+        <!-- Dynamic content will be injected here -->
+    </ul>
+
+    <script>
+      document.getElementById( 'adForm' ).addEventListener( 'submit', async ( e ) => {
+        e.preventDefault();
+        
+        const adGroupId = document.getElementById( 'adGroupId' ).value,
+        headlines = [
+          document.getElementById( 'headline1' ).value,
+          document.getElementById( 'headline2' ).value
+        ],
+        descriptions = [
+          document.getElementById(' description1' ).value,
+          document.getElementById(' description2' ).value
+        ],
+        response = await fetch( '/create-ad', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ adGroupId, headlines, descriptions }),
+        })
+
+        if ( response.ok ) {
+          alert( 'Ad created successfully!' )
+          window.location.reload()
+        } else {
+          alert( 'Failed to create ad.' )
+        }
+      })
+    </script>
+  </body>
+</html>
