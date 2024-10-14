@@ -4,13 +4,13 @@ This is a compilation of working prototypes representing the NodeJS programming 
 featuring the following technologies:
   - Auth0 (SSO)
   - ExpressJS
-  - gRPC
+  - Google Cloud (Ads, BigQuery, FireStore, Functions/Run, PubSub, Sheet, Storage, Workflows)
   - GraphQL
-  - Google Cloud (Sheet, Functions/Run, PubSub, FireStore, Storage, Workflows, BigQuery)
+  - gRPC
   - MongoDB (also other NoSQL such as NEDB, CouchDB, Redis)
   - MySQL
   - NestJS
   - Social Login with Facebook and Google
   - SSR and SEO friendliness
   - Tensorflow
-  - WebSocket, Socket.IO (WebRTC)
+  - WebRTC (WebSocket, Socket.IO)
