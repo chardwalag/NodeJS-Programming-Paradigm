@@ -2,7 +2,7 @@
 
 This is a compilation of working prototypes representing the NodeJS programming patterns;
 featuring the following technologies:
-  - AI Large Language Model (OLLAMA from Meta)
+  - AI Large Language Model (Ollama from Meta)
   - Communication Protocol (GraphQL, gRPC, RESTful, WebSocket)
   - Content Management System (Magento, WordPress)
   - Google Cloud (Ads, BigQuery, FireStore, Functions/Run, PubSub, Sheet, Storage, Workflows)
