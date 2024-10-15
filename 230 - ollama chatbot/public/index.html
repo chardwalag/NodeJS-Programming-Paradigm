@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Translator: Ms Trancy with Voice</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      textarea {
+        width: 100%;
+        height: 100px;
+      }
+      button {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Japanese Translator: Ms Trancy with Voice</h1>
+
+    <textarea id="llm-input" placeholder="Type English word or phrase here..."></textarea>
+    <button id="ask-llm-button">Ask</button>
+    <p id="llm-response"></p>
+
+    <label for="voice-select">Select Voice:</label>
+    <select id="voice-select"></select>
+
+    <div>
+      <button id="replay-button">Replay</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
