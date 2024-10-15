@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+  </head>
+  <body>
+    <h1>Blog App</h1>
+
+    <div id="login-form">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button id="login">Login</button>
+    </div>
+
+    <h2>Fetch Posts</h2>
+    <button id="fetch-posts">Fetch Posts</button>
+    <div id="posts"></div>
+
+    <h2>Create Post</h2>
+    <input type="text" id="post-title" placeholder="Post Title" required>
+    <textarea id="post-content" placeholder="Post Content" required></textarea>
+    <button id="create-post">Create Post</button>
+
+    <h2>Edit Post</h2>
+    <input type="text" id="edit-post-id" placeholder="Post ID" required>
+    <input type="text" id="edit-post-title" placeholder="New Post Title">
+    <textarea id="edit-post-content" placeholder="New Post Content"></textarea>
+    <button id="edit-post">Edit Post</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
