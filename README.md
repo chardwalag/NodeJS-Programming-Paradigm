@@ -3,11 +3,11 @@
 This is a compilation of working prototypes representing the NodeJS programming patterns;
 featuring the following technologies:
   - Auth0 (SSO)
+  - CMS (Magento, WordPress)
   - ExpressJS
   - Google Cloud (Ads, BigQuery, FireStore, Functions/Run, PubSub, Sheet, Storage, Workflows)
   - GraphQL
   - gRPC
-  - Magento CMS
   - MySQL
   - NoSQL (CouchDB, MongoDB, NEDB, Redis)
   - NestJS
