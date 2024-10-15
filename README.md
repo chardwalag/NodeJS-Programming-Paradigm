@@ -7,10 +7,12 @@ featuring the following technologies:
   - Google Cloud (Ads, BigQuery, FireStore, Functions/Run, PubSub, Sheet, Storage, Workflows)
   - GraphQL
   - gRPC
+  - Magento CMS
   - MySQL
   - NoSQL (CouchDB, MongoDB, NEDB, Redis)
   - NestJS
   - Social Login with Facebook and Google
   - SSR and SEO friendliness
+  - SumSub ID Verification
   - Tensorflow
   - WebRTC (WebSocket, Socket.IO)
