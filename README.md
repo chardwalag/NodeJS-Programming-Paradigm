@@ -13,6 +13,7 @@ featuring the following technologies:
   - NestJS
   - Social Login with Facebook and Google
   - SSR and SEO friendliness
-  - SumSub ID Verification
+  - SumSub ID verification
   - Tensorflow
+  - Twilio for SMS messaging
   - WebRTC (WebSocket, Socket.IO)
