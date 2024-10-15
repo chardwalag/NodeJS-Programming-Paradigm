@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SumSub KYC Verification</title>
+    <script src="https://static.sumsub.com/idensic/static/sns-websdk-builder.js"></script>
+  </head>
+  <body>
+    <h1>KYC Verification</h1>
+    <div id="sumsub-websdk-container"></div>
+    <script>
+      const fetchAccessToken = async () => {
+        const response = await fetch( '/generate-token' ), data = await response.json()
+        return data.accessToken
+      },
+
+      launchWebSdk = async () => {
+        const accessToken = await fetchAccessToken(),
+        snsWebSdkInstance = 
+          snsWebSdk
+            .init( accessToken )
+            .withConf({
+              lang: 'en',
+              email: 'applicant@example.com',
+              phone: '+1234567890'
+            })
+            .withOptions({ addViewportTag: false, adaptIframeHeight: true })
+            .on( 'idCheck.onStepCompleted', payload => {
+              console.log( 'Step Completed:', payload )
+            })
+            .on( 'idCheck.onError', err => {
+              console.error( 'Error:', err )
+            })
+            .build();
+
+        snsWebSdkInstance.launch( '#sumsub-websdk-container' )
+      }
+
+      launchWebSdk()
+    </script>
+  </body>
+</html>
