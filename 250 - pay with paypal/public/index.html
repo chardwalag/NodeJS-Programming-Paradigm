@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Payment</title>
+  </head>
+  <body>
+    <h1>PayPal Payment</h1>
+    
+    <input type="text" id="amount" placeholder="Enter US$ amount" />
+    <input type="text" id="description" placeholder="Enter description" />
+    
+    <button id="payBtn">Pay with PayPal</button>
+
+    <script>
+      document
+        .getElementById( 'payBtn' )
+        .addEventListener( 'click', async () => {
+          const amount = document.getElementById( 'amount' ).value,
+          description = document.getElementById( 'description' ).value
+
+          try {
+            const response = await fetch('http://localhost:3000/api/payment', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ amount, description })
+            }),
+            data = await response.json()
+            if ( data.approvalUrl ) window.location.href = data.approvalUrl
+          } catch ( err ) {
+            console.error( 'Payment error:', err )
+          }
+        }
+      )
+    </script>
+  </body>
+</html>
