@@ -7,9 +7,7 @@ document.addEventListener( "DOMContentLoaded", () => {
       if ( !response.ok ) {
         throw new Error( 'Network response was not ok' )
       }
-      const data = await response.json(),
-      products = data
-
+      const products = await response.json()
       products.forEach(({ node }) => {
         const listItem = document.createElement( "li" )
         listItem.innerHTML = `<h2>${ node.title }</h2><p>${ node.description }</p>`
