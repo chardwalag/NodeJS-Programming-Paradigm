@@ -5,8 +5,9 @@ featuring the following technologies:
   - AI Large Language Model (Ollama from Meta)
   - Communication Protocol (GraphQL, gRPC, RESTful, WebSocket)
   - Content Management System (Magento, WordPress)
+  - eCommerce (Shopify)
   - Google Cloud (Ads, BigQuery, FireStore, Functions/Run, PubSub, Sheet, Storage, Workflows)
-  - MySQL
+  - SQL (MySQL, MySQL Lite)
   - NoSQL (CouchDB, MongoDB, NEDB, Redis)
   - Security Protocol (OAuth 2.0, OpenID)
   - Server Framework (ExpressJS, HapiJS, NestJS)
@@ -15,5 +16,5 @@ featuring the following technologies:
   - Social Login with Facebook and Google
   - SumSub ID verification
   - Tensorflow
-  - Twilio for SMS messaging
+  - Twilio SMS messaging
   - WebRTC Video Call (Socket.IO)
