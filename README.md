@@ -9,6 +9,7 @@ featuring the following technologies:
   - Google Cloud (Ads, BigQuery, FireStore, Functions/Run, PubSub, Sheet, Storage, Workflows)
   - SQL (MySQL, MySQL Lite)
   - NoSQL (CouchDB, MongoDB, NEDB, Redis)
+  - Payments Service (Paypal)
   - Security Protocol (OAuth 2.0, OpenID)
   - Server Framework (ExpressJS, HapiJS, NestJS)
   - Server Side Rendering and SEO friendliness
