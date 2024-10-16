@@ -8,7 +8,7 @@ document.addEventListener( "DOMContentLoaded", () => {
         throw new Error( 'Network response was not ok' )
       }
       const data = await response.json(),
-      products = data.data.products.edges
+      products = data
 
       products.forEach(({ node }) => {
         const listItem = document.createElement( "li" )
