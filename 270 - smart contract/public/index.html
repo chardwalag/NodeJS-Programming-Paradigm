@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Messaging DApp</title>
+  </head>
+  <body>
+    <h1>Web3 Messaging DApp</h1>
+    
+    <input type="text" id="messageInput" placeholder="Enter your message" />
+    <button id="sendButton">Send Message</button>
+
+    <h2>Messages:</h2>
+    <ul id="messageList"></ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+    <script>
+      const sendBtn = document.getElementById( 'sendButton' ),
+      msgInput = document.getElementById( 'messageInput' ),
+      msgList = document.getElementById( 'messageList' ),
+
+      fetchMessages = async () => {
+        const response = await fetch( '/messages' ),
+        messages = await response.json()
+        displayMessages( messages )
+      },
+
+      displayMessages = messages => {
+        msgList.innerHTML = ''
+        messages.forEach( msg => {
+          const li = document.createElement( 'li' )
+          li.textContent = `${ msg.content } - ${ msg.sender }`
+          msgList.appendChild( li )
+        })
+      }
+
+      sendBtn.addEventListener( 'click', async () => {
+        const msgContent = msgInput.value
+        if ( !msgContent ) return
+
+        await fetch( '/send', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: msgContent })
+        })
+
+        msgInput.value = ''
+        fetchMessages()
+      });
+
+      fetchMessages()
+    </script>
+  </body>
+</html>
