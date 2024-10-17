@@ -47,7 +47,9 @@ featuring the following technologies:
     - Web3
       - Etherium Solidity
   - Security, Authentication and Authorization
-    - Protocol (OAuth 2.0, OpenID)
+    - Protocol
+      - OAuth 2.0
+      - OpenID
     - Single Signon
       - Auth0
       - OneLogin
