@@ -2,7 +2,9 @@
 
 This is a compilation of working prototypes representing the NodeJS programming patterns;
 featuring the following technologies:
-  - AI Large Language Model (Ollama from Meta)
+  - Artificial Intelligence
+      - Large Language Model (Ollama from Meta)
+      - Machine Learning (TensorFlow)
   - Communication Protocol (GraphQL, gRPC, RESTful, WebSocket)
   - Content Management System (Magento, WordPress)
   - eCommerce (Shopify)
@@ -16,7 +18,6 @@ featuring the following technologies:
   - Single Signon (Auth0, OneLogin)
   - Social Login with Facebook and Google
   - SumSub ID verification
-  - Tensorflow
   - Twilio SMS messaging
   - WebRTC Video Call (Socket.IO)
   - Web3 (Etherium Solidity)
