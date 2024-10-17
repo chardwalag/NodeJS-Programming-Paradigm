@@ -46,7 +46,7 @@ featuring the following technologies:
         - Workflows
     - Web3
       - Etherium Solidity
-  - Security, Authentication and Authorization
+  - Security and Authentication
     - Protocol
       - OAuth 2.0
       - OpenID
