@@ -10,7 +10,7 @@ featuring the following technologies:
   - eCommerce (Shopify)
   - Google Cloud (Ads, BigQuery, FireStore, Functions/Run, PubSub, Sheets, Storage, Workflows)
   - SQL (MySQL, MySQL Lite)
-  - NoSQL (CouchDB, MongoDB, NEDB, Redis)
+  - NoSQL (CouchDB, MongoDB, NeDB, Redis)
   - Payments Service (Paypal, Stripe)
   - Security Protocol (OAuth 2.0, OpenID)
   - Server Framework (ExpressJS, HapiJS, NestJS)
