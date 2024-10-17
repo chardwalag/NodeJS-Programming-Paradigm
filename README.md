@@ -6,7 +6,7 @@ featuring the following technologies:
   - Communication Protocol (GraphQL, gRPC, RESTful, WebSocket)
   - Content Management System (Magento, WordPress)
   - eCommerce (Shopify)
-  - Google Cloud (Ads, BigQuery, FireStore, Functions/Run, PubSub, Sheet, Storage, Workflows)
+  - Google Cloud (Ads, BigQuery, FireStore, Functions/Run, PubSub, Sheets, Storage, Workflows)
   - SQL (MySQL, MySQL Lite)
   - NoSQL (CouchDB, MongoDB, NEDB, Redis)
   - Payments Service (Paypal, Stripe)
