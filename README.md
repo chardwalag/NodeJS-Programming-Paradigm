@@ -5,8 +5,6 @@ featuring the following technologies:
   - Artificial Intelligence
       - Large Language Model (Ollama from Meta)
       - Machine Learning (TensorFlow)
-  - Cloud
-    - Google Cloud Platform (Ads, BigQuery, FireStore, Functions/Run, PubSub, Sheets, Storage, Workflows)
   - Communication
     - Protocol (GraphQL, gRPC, RESTful, WebSocket)
     - Twilio SMS messaging
@@ -18,6 +16,10 @@ featuring the following technologies:
     - Content Management System (Magento, WordPress)
     - eCommerce (Shopify)
     - Payments Service (Paypal, Stripe)
+  - Networking
+    - Cloud
+      - Google Cloud Platform (Ads, BigQuery, FireStore, Functions/Run, PubSub, Sheets, Storage, Workflows)
+    - Web3 (Etherium Solidity)
   - Security, Authentication and Authorization
     - Protocol (OAuth 2.0, OpenID)
     - Single Signon (Auth0, OneLogin)
@@ -25,4 +27,3 @@ featuring the following technologies:
     - SumSub ID verification
   - Server Framework (ExpressJS, HapiJS, NestJS)
   - Server Side Rendering and SEO friendliness
-  - Web3 (Etherium Solidity)
