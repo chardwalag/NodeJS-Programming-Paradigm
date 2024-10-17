@@ -19,3 +19,4 @@ featuring the following technologies:
   - Tensorflow
   - Twilio SMS messaging
   - WebRTC Video Call (Socket.IO)
+  - Web3 (Etherium Solidity)
