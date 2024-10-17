@@ -5,6 +5,8 @@ featuring the following technologies:
   - Artificial Intelligence
       - Large Language Model (Ollama from Meta)
       - Machine Learning (TensorFlow)
+  - Cloud
+    - Google Cloud Platform (Ads, BigQuery, FireStore, Functions/Run, PubSub, Sheets, Storage, Workflows)
   - Communication
     - Protocol (GraphQL, gRPC, RESTful, WebSocket)
     - Twilio SMS messaging
@@ -12,7 +14,6 @@ featuring the following technologies:
   - Database
     - NoSQL (CouchDB, MongoDB, NeDB, Redis)
     - SQL (MySQL, MySQL Lite)
-  - Google Cloud (Ads, BigQuery, FireStore, Functions/Run, PubSub, Sheets, Storage, Workflows)
   - Internet Application
     - Content Management System (Magento, WordPress)
     - eCommerce (Shopify)
