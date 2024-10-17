@@ -5,19 +5,23 @@ featuring the following technologies:
   - Artificial Intelligence
       - Large Language Model (Ollama from Meta)
       - Machine Learning (TensorFlow)
-  - Communication Protocol (GraphQL, gRPC, RESTful, WebSocket)
-  - Content Management System (Magento, WordPress)
-  - eCommerce (Shopify)
+  - Communication
+    - Protocol (GraphQL, gRPC, RESTful, WebSocket)
+    - Twilio SMS messaging
+    - WebRTC Video Call (Socket.IO)
+  - Database
+    - NoSQL (CouchDB, MongoDB, NeDB, Redis)
+    - SQL (MySQL, MySQL Lite)
   - Google Cloud (Ads, BigQuery, FireStore, Functions/Run, PubSub, Sheets, Storage, Workflows)
-  - SQL (MySQL, MySQL Lite)
-  - NoSQL (CouchDB, MongoDB, NeDB, Redis)
-  - Payments Service (Paypal, Stripe)
-  - Security Protocol (OAuth 2.0, OpenID)
+  - Internet Application
+    - Content Management System (Magento, WordPress)
+    - eCommerce (Shopify)
+    - Payments Service (Paypal, Stripe)
+  - Security, Authentication and Authorization
+    - Protocol (OAuth 2.0, OpenID)
+    - Single Signon (Auth0, OneLogin)
+    - Social Login with Facebook and Google
+    - SumSub ID verification
   - Server Framework (ExpressJS, HapiJS, NestJS)
   - Server Side Rendering and SEO friendliness
-  - Single Signon (Auth0, OneLogin)
-  - Social Login with Facebook and Google
-  - SumSub ID verification
-  - Twilio SMS messaging
-  - WebRTC Video Call (Socket.IO)
   - Web3 (Etherium Solidity)
