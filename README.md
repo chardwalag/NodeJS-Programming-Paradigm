@@ -53,7 +53,9 @@ featuring the following technologies:
     - Single Signon
       - Auth0
       - OneLogin
-    - Social Login with Facebook and Google
+    - Social Login
+      - Facebook
+      - Google
     - SumSub ID verification
   - Server Framework
     - ExpressJS
