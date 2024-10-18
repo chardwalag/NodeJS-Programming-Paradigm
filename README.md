@@ -39,6 +39,8 @@ featuring the following technologies:
     - Payments Service
       - Paypal
       - Stripe
+    - Trading
+      - Central Limit Orderbook Exchange
   - Networking
     - Cloud
       - Google Cloud Platform
