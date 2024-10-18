@@ -24,6 +24,12 @@ featuring the following technologies:
     - SQL
       - MySQL
       - MySQL Lite
+  - Data Format
+    - JSON
+    - Protobuf
+    - Sol (for Smart Contract)
+    - XML
+    - YML
   - Internet Application
     - Content Management System
       - Magento
@@ -45,7 +51,7 @@ featuring the following technologies:
         - Storage
         - Workflows
     - Web3
-      - Etherium Solidity
+      - Etherium (Solidity)
   - Security and Authentication
     - Protocol
       - OAuth 2.0
