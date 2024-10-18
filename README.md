@@ -40,6 +40,7 @@ featuring the following technologies:
       - Paypal
       - Stripe
     - Trading
+      - Algorithmic Trading
       - Central Limit Orderbook Exchange
       - CryptoCurreny Blockchain
   - Networking
