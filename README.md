@@ -41,6 +41,7 @@ featuring the following technologies:
       - Stripe
     - Trading
       - Central Limit Orderbook Exchange
+      - CryptoCurreny Blockchain
   - Networking
     - Cloud
       - Google Cloud Platform
