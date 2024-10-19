@@ -21,13 +21,13 @@ featuring the following technologies:
       - MongoDB
       - NeDB
       - Redis
+    - Object-Relational Mapping
+      - Prisma
+      - TypeORM
     - SQL
       - MySQL
       - MySQL Lite
       - PostgreSQL
-    - Object-Relational Mapping
-      - Prisma
-      - TypeORM
   - Data Format
     - JSON
     - Protobuf
