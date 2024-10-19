@@ -8,6 +8,7 @@ featuring the following technologies:
       - Machine Learning
         - TensorFlow
   - Communication
+    - RabbitMQ Microservices Communication
     - Protocol
       - GraphQL
       - gRPC
