@@ -16,16 +16,15 @@ featuring the following technologies:
     - Twilio SMS messaging
     - WebRTC Video Call (Socket.IO)
   - Database
-    - Kind
-      - NoSQL
-        - CouchDB
-        - MongoDB
-        - NeDB
-        - Redis
-      - SQL
-        - MySQL
-        - MySQL Lite
-        - PostgreSQL
+    - NoSQL
+      - CouchDB
+      - MongoDB
+      - NeDB
+      - Redis
+    - SQL
+      - MySQL
+      - MySQL Lite
+      - PostgreSQL
     - Object-Relational Mapping
       - Prisma
       - TypeORM
