@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Order Management</title>
+  </head>
+  <body>
+    <h1>Place a Stock Order</h1>
+    <form id="orderForm">
+      <label for="stockSymbol">Stock Symbol:</label>
+      <select id="stockSymbol" name="stockSymbol" required>
+        <option value="">Loading...</option>
+      </select>
+      
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" required min="1">
+      
+      <button type="submit">Place Order</button>
+    </form>
+
+    <h2>Your Orders</h2>
+    <button onclick="fetchOrders()">View Orders</button>
+    
+    <div id="orders"></div>
+
+    <script>
+      const fetchSymbols = async () => {
+        try {
+          const response = await fetch( '/symbols' ),
+          symbols = await response.json(),
+          select = document.getElementById( 'stockSymbol' )
+          select.innerHTML = ''
+
+          symbols.forEach( symbol => {
+            const option = document.createElement( 'option' )
+            option.value = symbol.ticker
+            option.textContent = `${ symbol.name } (${ symbol.ticker })`
+            select.appendChild( option )
+          })
+        } catch ( err ) {
+          console.error( 'Error fetching symbols:', err )
+        }
+      },
+
+      fetchOrders = async () => {
+        const response = await fetch( '/orders' ),
+        orders = await response.json(),
+        ordersDiv = document.getElementById( 'orders' )
+        ordersDiv.innerHTML = '<ul>' + orders.map( order => `<li>${ order.stockSymbol }: ${ order.quantity } shares at $${ order.price }</li>`).join('') + '</ul>'
+      }
+
+      document
+        .getElementById( 'orderForm' )
+        .addEventListener( 'submit', async ( e ) => {
+          e.preventDefault()
+          const formData = new FormData( e.target ),
+          data = Object.fromEntries( formData.entries())
+
+          try {
+            const response = await fetch( '/place-order', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify( data )
+            })
+
+            if ( response.ok ) {
+              alert( 'Order placed successfully!' )
+              fetchOrders()
+            }
+            else alert( 'Error placing order.' )
+          } catch ( err ) {
+            console.error( 'Error:', err )
+          }
+      })
+
+      window.onload = fetchSymbols
+    </script>
+  </body>
+</html>
