@@ -25,6 +25,7 @@ featuring the following technologies:
       - SQL
         - MySQL
         - MySQL Lite
+        - PostgreSQL
     - Object-Relational Mapping
       - Prisma
       - TypeORM
