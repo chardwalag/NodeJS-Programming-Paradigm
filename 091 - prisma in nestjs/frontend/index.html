@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title>
+    <style>
+      body { font-family: Arial, sans-serif; }
+      .book-list { margin-top: 20px; }
+      .book-item { display: flex; justify-content: space-between; }
+    </style>
+  </head>
+  <body>
+    <h1>Book Management</h1>
+    <form id="book-form">
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="text" id="author" placeholder="Author" required />
+      <button type="submit">Add Book</button>
+    </form>
+    <div class="book-list" id="book-list"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
