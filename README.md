@@ -16,14 +16,18 @@ featuring the following technologies:
     - Twilio SMS messaging
     - WebRTC Video Call (Socket.IO)
   - Database
-    - NoSQL
-      - CouchDB
-      - MongoDB
-      - NeDB
-      - Redis
-    - SQL
-      - MySQL
-      - MySQL Lite
+    - Kind
+      - NoSQL
+        - CouchDB
+        - MongoDB
+        - NeDB
+        - Redis
+      - SQL
+        - MySQL
+        - MySQL Lite
+    - Object-Relational Mapping
+      - Prisma
+      - TypeORM
   - Data Format
     - JSON
     - Protobuf
