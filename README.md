@@ -27,9 +27,7 @@ featuring the following technologies:
   - Data Format
     - JSON
     - Protobuf
-    - Sol (for Smart Contract)
     - XML
-    - YML
   - Internet Application
     - Content Management System
       - Magento
