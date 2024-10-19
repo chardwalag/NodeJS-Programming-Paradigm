@@ -8,12 +8,12 @@ featuring the following technologies:
       - Machine Learning
         - TensorFlow
   - Communication
-    - RabbitMQ Microservices Communication
     - Protocol
       - GraphQL
       - gRPC
       - RESTful
       - WebSocket
+    - RabbitMQ Microservices Communication
     - Twilio SMS messaging
     - WebRTC Video Call (Socket.IO)
   - Database
