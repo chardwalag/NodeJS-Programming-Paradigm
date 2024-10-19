@@ -42,10 +42,11 @@ featuring the following technologies:
     - Payments Service
       - Paypal
       - Stripe
-    - Trading
+    - Trading System
       - Algorithmic Trading
       - Central Limit Orderbook Exchange
       - CryptoCurreny Blockchain
+      - Order Management System
   - Networking
     - Cloud
       - Google Cloud Platform
