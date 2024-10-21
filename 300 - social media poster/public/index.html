@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Poster</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 20px; }
+      textarea { width: 100%; height: 100px; }
+      input[type="file"] { margin-top: 10px; }
+      button { margin-top: 10px; }
+    </style>
+  </head>
+  <body>
+    <h1>Post to Social Media</h1>
+    <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+    <input type="file" id="mediaInput" accept="image/*">
+    <button id="postButton">Post</button>
+
+    <div id="response"></div>
+
+    <script>
+      window.onload = () => {
+        document
+          .getElementById( 'postButton' )
+          .addEventListener( 'click', async () => {
+            const postContent = document.getElementById( 'postContent' ).value
+            console.log('postContent',postContent)
+            mediaInput = document.getElementById( 'mediaInput' ).files[ 0 ],
+            formData = new FormData()
+            formData.append( 'post', postContent )
+            if ( mediaInput ) formData.append( 'media', mediaInput )
+            try {
+              const response = await fetch( 'http://localhost:3000/post', {
+                method: 'POST',
+                body: formData,
+              }),
+              result = await response.json()
+              document.getElementById( 'response' ).innerText = JSON.stringify( result, null, 2 )
+            } catch ( err ) {
+              console.error( 'Error:', err )
+              document.getElementById( 'response' ).innerText = 'Error posting to social media.'
+            }
+        })
+      }
+    </script>
+
+  </body>
+</html>
