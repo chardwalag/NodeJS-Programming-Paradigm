@@ -42,6 +42,8 @@ featuring the following technologies:
     - Payments Service
       - Paypal
       - Stripe
+    - Social Media API
+      - ayrshare Social Media
     - Trading System
       - Algorithmic Trading
       - Central Limit Orderbook Exchange
