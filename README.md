@@ -67,6 +67,7 @@ featuring the following technologies:
     - Protocol
       - OAuth 2.0
       - OpenID
+    - Quick Response Code Identification
     - Single Signon
       - Auth0
       - OneLogin
@@ -74,6 +75,7 @@ featuring the following technologies:
       - Facebook
       - Google
     - SumSub ID verification
+    - Time-based One-Time-Password
   - Server Framework
     - ExpressJS
     - HapiJS
