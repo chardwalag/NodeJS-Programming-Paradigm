@@ -22,7 +22,8 @@ featuring the following technologies:
       - MongoDB
       - NeDB
       - Redis
-    - Object-Relational Mapping
+    - Object-Relational Mapping / Object Data Modeling
+      - Mongoose
       - Prisma
       - TypeORM
     - SQL
