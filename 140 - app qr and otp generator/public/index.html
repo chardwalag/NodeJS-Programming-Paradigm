@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App QR & OTP Generator</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>App QR & OTP Generator</h1>
+    
+    <div>
+      <input type="text" style="width: 400px;" id="label" placeholder="Enter lebal" value='Label-AAA' />
+    </div>
+
+    <div>
+      <input type="text" style="width: 400px;" id="sharedSecret" placeholder="Shared Secret" />
+    </div>
+    
+    <div>
+      <input type="text" style="width: 400px;" id="serviceName" placeholder="Service Name (e.g., MyApp)" value="ServiceName" />
+    </div>
+    
+    <div>
+      <input type="number" style="width: 400px;" id="digits" placeholder="Number of Digits (default is 6)" value="6" min="1" max="10" />
+    </div>
+    <div>
+      <input type="number" style="width: 400px;" id="step" placeholder="Time Step (seconds)" value="30" />
+    </div>
+    
+    <label for="algorithm">Hash Algorithm:</label>
+    <select id="algorithm">
+      <option value="SHA1">SHA1</option>
+      <option value="SHA256">SHA256</option>
+      <option value="SHA512">SHA512</option>
+    </select>
+    
+    <div>
+      <button id="generate">Generate</button>
+    </div>
+    
+    <div id="qr-code"></div>
+    <p id="token"></p>
+  </body>
+</html>
