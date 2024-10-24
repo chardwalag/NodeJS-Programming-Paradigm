@@ -44,7 +44,7 @@ featuring the following technologies:
       - Paypal
       - Stripe
     - Social Media API
-      - ayrshare Social Media
+      - ayrshare
     - Trading System
       - Algorithmic Trading
       - Central Limit Orderbook Exchange
@@ -75,7 +75,7 @@ featuring the following technologies:
       - Facebook
       - Google
     - SumSub ID verification
-    - Time-based One-Time-Password
+    - Time-based One Time Password
   - Server Framework
     - ExpressJS
     - HapiJS
